@@ -325,6 +325,7 @@ body {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 input {
@@ -344,6 +345,30 @@ input {
 .header__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.header-bottom {
+  background-color: #0A223D;
+}
+.header-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 31px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-right: auto;
+}
+.header-menu__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.logo {
+  width: 177px;
 }
 
 .search {
@@ -391,4 +416,29 @@ input {
 }
 .user__name {
   margin-left: 18px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+}
+.header__search {
+  margin-left: auto;
+}
+.header-menu__link {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }/*# sourceMappingURL=style.css.map */
