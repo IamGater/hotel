@@ -315,6 +315,7 @@ template {
 body {
   font-family: "Mulish", sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -330,6 +331,10 @@ button {
 
 input {
   border: none;
+}
+
+img {
+  min-width: 100%;
 }
 
 .header {
@@ -376,6 +381,9 @@ input {
   overflow: hidden;
   border-radius: 6px;
   height: 40px;
+}
+.search__menu-button {
+  display: none;
 }
 .search__input {
   border-radius: 6px;
@@ -426,6 +434,9 @@ input {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
 }
 .header-top {
   padding-top: 30px;
@@ -433,7 +444,6 @@ input {
 }
 .header__search {
   margin-left: auto;
-  max-width: 340px;
 }
 .header-menu {
   padding-top: 22px;
@@ -444,12 +454,87 @@ input {
   line-height: 15px;
 }
 
+.search__input {
+  width: 340px;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
     width: 92%;
   }
-  .header-menu {
+  .header__search, .header-menu, .header__user {
     display: none;
   }
+  .header__top__menu-button {
+    display: flex;
+  }
+}
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+.hotel-info {
+  display: flex;
+  align-items: center;
+}
+.hotel-info__offer {
+  margin-left: 14px;
+  margin-top: 6px;
+}
+.hotel-name {
+  font-weight: 700;
+  line-height: normal;
+  font-size: 24px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.hotel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotel-wrapper-description {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.stars {
+  width: 48px;
+  height: 8px;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: normal;
+  padding: 4px 9px;
+  width: 70px;
+  height: 20px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.rating {
+  max-width: 65px;
+  min-height: 45px;
+  text-align: center;
+  color: #fff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+}
+.rating__text {
+  font-size: 8px;
+  line-height: normal;
+}
+.rating__counter {
+  font-size: 14px;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
