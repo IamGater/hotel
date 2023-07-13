@@ -773,7 +773,7 @@ img {
   line-height: normal;
   text-transform: uppercase;
 }
-.reviews-slider__item {
+.reviews__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -788,14 +788,14 @@ img {
 .stars-rating {
   padding-bottom: 33px;
 }
-.reviews-slider__avatar {
+.reviews__avatar {
   width: 90px;
   height: 90px;
   flex-shrink: 0;
   border-radius: 90px;
   object-fit: cover;
 }
-.reviews-slider__username {
+.reviews__username {
   color: #ec1f46;
   font-family: Mulish;
   font-size: 12px;
