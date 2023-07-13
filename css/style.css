@@ -520,6 +520,7 @@ img {
 }
 
 .stars {
+  margin-bottom: 4px;
   width: 48px;
   height: 8px;
 }
@@ -593,11 +594,11 @@ img {
 }
 .slider-button-next {
   right: 18px;
-  background-image: url("../img/chevron-right.svg");
+  background-image: url("../img/arrow-next.svg");
 }
 .slider-button-prev {
   left: 18px;
-  background-image: url("../img/chevron-left.svg");
+  background-image: url("../img/arrow-prev.svg");
 }
 .booking {
   border-radius: 8px;
