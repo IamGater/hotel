@@ -803,3 +803,65 @@ img {
   font-weight: 700;
   line-height: normal;
 }
+.activities {
+  padding: 68px 90px;
+}
+.activities__title {
+  color: #000;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  padding: 24px 26px;
+  overflow: hidden;
+  width: 255px;
+  height: 255px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #0a223d 100%);
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+.card__title {
+  z-index: 123;
+  margin-top: auto;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card__button {
+  border-radius: 4px;
+  background: #ec1f46;
+  width: 100px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
