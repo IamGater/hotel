@@ -843,7 +843,7 @@ img {
   z-index: -2;
 }
 .card__title {
-  z-index: 123;
+  z-index: 99;
   margin-top: auto;
   color: #fff;
   font-family: Mulish;
@@ -911,4 +911,86 @@ img {
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
+}
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+ }
+  .modal__overlay--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 33px 88px;
+  border-radius: 8px;
+  background-color: #0a223d;
+  color: #fff;
+  z-index: 101;
+  max-width: 478px;
+  height: 487px;
+  flex-shrink: 0;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+ }
+  .modal__dialog--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.modal__close {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  text-decoration: none;
+}
+.modal__title {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.modal__message {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 23px;
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+.modal__button {
+  min-width: 305px;
+  min-height: 50px;
+  padding: 18px;
+  border-radius: 4px;
+  background-color: #ec1f46;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
