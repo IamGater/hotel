@@ -27,3 +27,6 @@ const swiper = new Swiper('.swiper', {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+  AOS.init();
+ 

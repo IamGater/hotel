@@ -13,10 +13,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stylews.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" data-aos="fade-down">
     <div class="container">
       <div class="header-top">
         <a href="#" class="logo">
@@ -24,7 +26,7 @@
         </a>
 
         <form action="#" class="search header__search">
-          <input type="text" class="search__input" placeholder="Search Location" />
+          <input type="text" class="search__input" placeholder="Search Location" required />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
@@ -36,7 +38,7 @@
       </div>
 
     </div>
-    <div class="header-bottom">
+    <div class="header-bottom" >
       <div class="container">
         <ul class="header-menu">
           <li class="header-menu__item">
@@ -68,12 +70,12 @@
     <div class="container">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Home</a> /
+          <a href="#" class="breadcrumb-list__link" data-aos="zoom-in">Home</a> /
         </li>
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Flash Offers</a> /
+          <a href="#" class="breadcrumb-list__link" data-aos="zoom-in">Flash Offers</a> /
         </li>
-        <li class="breadcrumb-list__item">
+        <li class="breadcrumb-list__item" data-aos="zoom-in">
           Grand Hilton Hotel
         </li>
       </ul>
@@ -88,18 +90,18 @@
           </div>
           <div class="hotel-wrapper">
 
-            <h1 class="hotel-name">GRAND HILTON HOTEL</h1>
-            <span class="offer hotel-info__offer">Flash Offer</span>
+            <h1 class="hotel-name" data-aos="zoom-in">GRAND HILTON HOTEL</h1>
+            <span class="offer hotel-info__offer" data-aos="zoom-in">Flash Offer</span>
           </div>
-          <p class="hotel-description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+          <p class="hotel-description" data-aos="zoom-in">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
         <div class="rating hotel-info__rating">
-          <span class="rating__text">User Rattings</span>
-          <span class="rating__counter">4.5/5</span>
+          <span class="rating__text" data-aos="zoom-in">User Rattings</span>
+          <span class="rating__counter" data-aos="zoom-in">4.5/5</span>
         </div>
       </div>
       <div class="hotel-grid">
-        <div class="hotel-slider">
+        <div class="hotel-slider" data-aos="fade-right">
           <!-- Slider main container -->
           <div class="swiper">
             <!-- Additional required wrapper -->
@@ -125,7 +127,7 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
-        <div class="hotel-right">
+        <div class="hotel-right" data-aos="fade-left">
           <div class="booking">
             <div class="booking__info">
               <div class="booking__price">
@@ -164,32 +166,32 @@
       </div>
     </div>
   </section>
-  <section class="newsletter">
+  <section class="newsletter" >
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title">
+      <h2 class="newsletter-title" data-aos="zoom-in">
         subscribe to our
-        <span class="newsletter-title__strong">Newsletter</span>
+        <span class="newsletter-title__strong" data-aos="zoom-in">Newsletter</span>
       </h2>
-      <form action="send.php" method="post" class="subscribe newsletter__subscribe">
+      <form action="thankyou.html" method="post" class="subscribe newsletter__subscribe" data-aos="zoom-in">
         <input type="text" class="subscribe__input" placeholder="Your email addres" name="email" />
         <button class="subscribe__button">Send</button>
     </div>
   </section>
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews__title">What people think about us</h2>
+      <h2 class="reviews__title" data-aos="zoom-in">What people think about us</h2>
       <div class="reviews-container">
         <div class="reviews-wrapper">
           <div class="reviews__item">
             <div class="reviews__profile">
               <img src="img/reviews-avatar.jpg" class="reviews__avatar">
             </div>
-            <h3 class="reviews__username">Megan Fox</h3>
-            <span class="reviews__date">Stayed 18 Nov, 2019</span>
+            <h3 class="reviews__username" data-aos="zoom-in">Megan Fox</h3>
+            <span class="reviews__date" data-aos="zoom-in">Stayed 18 Nov, 2019</span>
             <div class="stars-rating">
               <img src="img/Stars.svg" alt="stars">
             </div>
-            <span class="reviews-text">It was very nice hotel with cleanliness. Staff behavior was good and polite.
+            <span class="reviews-text" data-aos="zoom-in">It was very nice hotel with cleanliness. Staff behavior was good and polite.
               They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor
               and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and
               support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most
@@ -204,28 +206,28 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title">Other Activities</h2>
+      <h2 class="activities__title" data-aos="zoom-in">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="img/bar.png" class="card__image">
           <h3 class="card__title">The curious corner
             of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="img/golf.png" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="img/water.png" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
             trip - full day
           </h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="img/island.png" class="card__image">
           <h3 class="card__title">The blue marine discovery
             quest</h3>
@@ -234,7 +236,7 @@
       </div>
     </div>
   </section>
-  <section class="footer">
+  <section class="footer" data-aos="fade-up">
     <div class="container">
       <div class="footer-wrapper">
         <img src="img/vartical-logo.svg" class="footer-logo">
@@ -288,9 +290,9 @@
         </a>
         <h3 class="modal__title">Send us message</h3>
         <form action="send.php" method="post" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your full name" name="name">
-          <input type="text" class="input modal__input" placeholder="Phone number">
-          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <input type="text" class="input modal__input" placeholder="Your full name" name="name" required>
+          <input type="text" class="input modal__input" placeholder="Phone number" required>
+          <textarea class="message modal__message" placeholder="Message" name="message" required></textarea>
           <button class="modal__button">Send</button>
         </form>
       </div>
@@ -298,6 +300,9 @@
   </div>
   <script src="js/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+  <script src="js/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 
