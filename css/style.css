@@ -342,10 +342,30 @@ img {
   .container {
     max-width: 960px;
   }
+  .swiper-slide-image {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+  }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .hotel-right {
+    display: flex;
+    flex-direction: row;
+  }
+  .hotel-slider {
+    margin-bottom: 30px;
+  }
+  .map {
+    width: 340px;
+  }
+  .booking {
+    width: 340;
   }
   .logo {
     width: 132px;
@@ -376,13 +396,56 @@ img {
     max-width: 576px;
     width: 92%;
   }
-  .header__search,
-  .header-menu,
-  .header__user {
+  .header-menu {
     display: none;
   }
   .header__top__menu-button {
     display: flex;
+  }
+  .swiper {
+    max-height: 179px;
+  }
+  .hotel-slider {
+    max-width: 278.444px;
+    min-height: 179px;
+    flex-shrink: 0;
+  }
+  .booking {
+    max-width: 279px;
+    max-height: 210px;
+  }
+  .booking__button{
+    max-width: 235px;
+    max-height: 45px;
+    padding-right: 22px;
+  }
+  .map{
+    max-width: 280px;
+    max-height: 172.941px;
+  }
+  .newsletter-wrapper{
+    flex-direction: column;
+  }
+  .newsletter-title{
+    padding-right: 108px;
+  }
+  .reviews-text{
+    max-width: 219px;
+  }
+  .activities-wrapper{
+    flex-direction: column;
+  }
+  .card{
+    margin-bottom: 20px;
+  }
+  .footer-wrapper{
+    flex-direction: column;
+  }
+  .footer-logo{
+    width: 104px;
+  }
+  .footer__list{
+    padding-left: 0;
   }
 }
 .header {
@@ -689,6 +752,8 @@ img {
 .map {
   width: 347px;
   height: 213px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .newsletter {
   position: relative;
@@ -922,11 +987,11 @@ img {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
- }
-  .modal__overlay--visible {
-    visibility: visible;
-    opacity: 1;
-  }
+}
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
 
 .modal__dialog {
   position: fixed;
@@ -943,11 +1008,11 @@ img {
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
- }
-  .modal__dialog--visible {
-    visibility: visible;
-    opacity: 1;
-  }
+}
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
 
 .modal__close {
   position: absolute;
