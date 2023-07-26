@@ -492,7 +492,8 @@ img {
   justify-content: space-between;
 }
 .hotel-slider {
-  width: 728px;
+  max-width: 728px;
+  gap: 30px;
 }
 .slider-button {
   width: 30px;
@@ -661,7 +662,7 @@ img {
 }
 .map {
   width: 347px;
-  height: 213px;
+  height: auto;
   border-radius: 4px;
   overflow: hidden;
 }

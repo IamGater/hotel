@@ -2,6 +2,17 @@
   .container {
     max-width: 960px;
   }
+  .hotel-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hotel-right {
+    display: flex;
+    flex-direction: row;
+  }
+  .hotel-slider {
+    margin-bottom: 30px;
+  }
   .swiper-slide-image {
     height: 100%;
     object-fit: cover;
@@ -11,12 +22,11 @@
   .container {
     max-width: 700px;
   }
+  .header__search{
+    margin-left: 48px;
+  }
   .hotel-grid {
     flex-direction: column;
-  }
-  .hotel-right {
-    display: flex;
-    flex-direction: row;
   }
   .hotel-slider {
     margin-bottom: 30px;
@@ -30,9 +40,11 @@
   .logo {
     width: 132px;
   }
-
+  .activities {
+    padding: 68px 35px;
+  }
   .activities-wrapper {
-    gap: 20px;
+    gap: 18px;
   }
   .card {
     width: 340px;
@@ -71,36 +83,23 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 576px;
-    width: 92%;
-  }
+ 
   .header-menu {
     display: none;
   }
   .header__top__menu-button {
     display: flex;
   }
-  .swiper {
-    max-height: 179px;
-  }
+  
   .hotel-slider {
-    max-width: 278.444px;
-    min-height: 179px;
-    flex-shrink: 0;
+    max-width: 700px;
   }
-  .booking {
-    max-width: 279px;
-    max-height: 210px;
-  }
+
+
   .booking__button {
     max-width: 235px;
     max-height: 45px;
     padding-right: 22px;
-  }
-  .map {
-    max-width: 280px;
-    max-height: 172.941px;
   }
   .newsletter-wrapper {
     flex-direction: column;
@@ -111,12 +110,7 @@
   .reviews-text {
     max-width: 219px;
   }
-  .activities-wrapper {
-    flex-direction: column;
-  }
-  .card {
-    margin-bottom: 20px;
-  }
+  
   .footer__top-wrapper {
     flex-direction: column;
   }
