@@ -441,6 +441,10 @@ img {
   border-radius: 50%;
   object-fit: cover;
 }
+.burger__line{
+  width: 16px;
+  height: 11px;
+}
 .user__name {
   margin-left: 18px;
 }
