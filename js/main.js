@@ -28,5 +28,34 @@ const swiper = new Swiper('.swiper', {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
-  AOS.init();
- 
+AOS.init();
+  
+const burger = document.querySelector('.burger')
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger_active')
+})
+
+
+const extractNodesFrom = selector => {
+  [...document.querySelectorAll(selector)].forEach(fw => {
+    const parent = fw.parentNode;
+    [...fw.children].forEach(child => {
+      parent.appendChild(child);
+    });
+
+    parent.removeChild(fw);
+  });
+};
+
+
+
+ const checkMediaQuery = () => {
+  if (window.innerWidth < 992) {
+    extractNodesFrom(".fw");
+   } else {
+     console.log('1')
+    // extractNodesFrom(".fw");
+  }
+}
+checkMediaQuery()
