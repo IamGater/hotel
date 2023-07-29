@@ -1,430 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>danya super</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>danya super</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/aos.css">
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
-</head>
-
-<body>
-  <header class="header" data-aos="fade-down">
-    <div class="container">
-      <div class="header-top">
-        <a href="#" class="logo">
-          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__img" />
-        </a>
-
-        <form action="#" class="search header__search">
-          <input type="text" class="search__input" placeholder="Search Location" required />
-          <button class="search__button">
-            <img src="img/search.svg" alt="Icon: search" />
-          </button>
-        </form>
-        <a href="#" class="user header__user">
-          <img src="img/user-avatar.jpeg" alt="avatar: Nathan" class="user__avatar" />
-          <span class="user__name">Nathan</span>
-        </a>
-        <button class="header__burger">
-          <span class="burger__line"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
-            <rect y="10" width="16" height="1" fill="#333333"/>
-            <rect y="5" width="16" height="1" fill="#333333"/>
-            <rect width="16" height="1" fill="#333333"/>
-          </svg></span>
-        </button>
-      </div>
-
-    </div>
-    <div class="header-bottom">
+  <body>
+    <header class="header" data-aos="fade-down">
       <div class="container">
-        <ul class="header-menu">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">All Deals</a>
+        <div class="header-top">
+          <a href="#" class="logo">
+            <img
+              src="img/horizontal-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo__img"
+            />
+          </a>
+          <form action="#" class="search header__search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Location"
+              required
+            />
+            <button class="search__button">
+              <img src="img/search.svg" alt="Icon: search" />
+            </button>
+          </form>
+          <a href="#" class="user header__user">
+            <img
+              src="img/user-avatar.jpeg"
+              alt="avatar: Nathan"
+              class="user__avatar"
+            />
+            <span class="user__name">Nathan</span>
+          </a>
+          <button class="header__burger">
+            <span class="burger__line"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="11"
+                viewBox="0 0 16 11"
+                fill="none"
+              >
+                <rect y="10" width="16" height="1" fill="#333333" />
+                <rect y="5" width="16" height="1" fill="#333333" />
+                <rect width="16" height="1" fill="#333333" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="header-menu">
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">All Deals</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Hotels</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Activities</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Hotel Day Packages</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Restaurants</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Events</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Rodrigues</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link" data-aos="zoom-in"
+              >Home</a
+            >
+            /
           </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Hotels</a>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link" data-aos="zoom-in"
+              >Flash Offers</a
+            >
+            /
           </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Activities</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Hotel Day Packages</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Restaurants</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Events</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Rodrigues</a>
+          <li class="breadcrumb-list__item" data-aos="zoom-in">
+            Grand Hilton Hotel
           </li>
         </ul>
       </div>
-    </div>
-  </header>
-  <nav class="breadcrumb">
-    <div class="container">
-      <ul class="breadcrumb-list">
-        <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link" data-aos="zoom-in">Home</a> /
-        </li>
-        <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link" data-aos="zoom-in">Flash Offers</a> /
-        </li>
-        <li class="breadcrumb-list__item" data-aos="zoom-in">
-          Grand Hilton Hotel
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <section class="hotel">
-    <div class="container">
-      <div class="hotel-info">
-        <div class="hotel-info__text">
-          <div class="stars">
-            <img src="img/Stars.svg" alt="stars">
-          </div>
-          <div class="hotel-wrapper">
-
-            <h1 class="hotel-name" data-aos="zoom-in">GRAND HILTON HOTEL</h1>
-            <span class="offer hotel-info__offer" data-aos="zoom-in">Flash Offer</span>
-          </div>
-          <p class="hotel-description" data-aos="zoom-in">Half-Board/ All Inclusive + Complimentary Activities + Child
-            Stays Free</p>
-        </div>
-        <div class="rating hotel-info__rating">
-          <span class="rating__text" data-aos="zoom-in">User Rattings</span>
-          <span class="rating__counter" data-aos="zoom-in">4.5/5</span>
-        </div>
-      </div>
-      <div class="hotel-grid">
-        <div class="hotel-slider" data-aos="fade-right">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/slide.jpg" class="swiper-slide-image" alt="slide">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/slide.jpg" class="swiper-slide-image" alt="slide">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/slide.jpg" class="swiper-slide-image" alt="slide">
-              </div>
-              ...
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button-prev"></button>
-            <button class="slider-button slider-button-next"></button>
-
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
-          </div>
-        </div>
-        <div class="hotel-right" data-aos="fade-left">
-          <div class="booking">
-            <div class="booking__info">
-              <div class="booking__price">
-                <span class="booking__start">price starts as</span>
-                <strong class="booking__pricetag">$ 8,500</strong>
-                <span class="booking__per-room">per room / night</span>
-              </div>
-              <div class="booking__room">
-                <div class="booking__text">
-                  <img src="img/user.svg" alt="Icon: user" class="booking__icon">
-                  <span class="booking__description">2 x Guests</span>
-                </div>
-                <div class="booking__text">
-                  <img src="img/home.svg" alt="Icon: home" class="booking__icon">
-                  <span class="booking__description">1 x Room</span>
-                </div>
-              </div>
-
-            </div>
-            <div class="call-center">
-              <span class="call-center__text">Quick Booking</span>
-              <a class="call-center__number" href="tel:12100">
-                <img src="img/phone-call.svg" alt="Icon: phone">
-                <span class="call-center__num">12100</span>
-              </a>
-            </div>
-            <button data-toggle="modal" class="button booking__button">View Other Options</button>
-          </div>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.458389041313!2d33.407663012636284!3d47.90816737458225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db2177c3aba921%3A0xbf1506b3bf84e813!2sKFC!5e0!3m2!1sru!2sua!4v1689150280476!5m2!1sru!2sua"
-              width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="newsletter">
-    <div class="newsletter-wrapper">
-      <h2 class="newsletter-title" data-aos="zoom-in">
-        subscribe to our
-        <span class="newsletter-title__strong" data-aos="zoom-in">Newsletter</span>
-      </h2>
-      <form action="thankyou.html" method="post" class="subscribe newsletter__subscribe" data-aos="zoom-in">
-        <input type="text" class="subscribe__input" placeholder="Your email addres" name="email" />
-        <button class="subscribe__button">Send</button>
-        </form>
-    </div>
-  </section>
-  <section class="reviews">
-    <div class="container">
-      <h2 class="reviews__title" data-aos="zoom-in">What people think about us</h2>
-      <div class="reviews-container">
-        <div class="reviews-wrapper">
-          <div class="reviews__item">
-            <div class="reviews__profile">
-              <img src="img/reviews-avatar.jpg" alt="reviews avatar" class="reviews__avatar">
-            </div>
-            <h3 class="reviews__username" data-aos="zoom-in">Megan Fox</h3>
-            <span class="reviews__date" data-aos="zoom-in">Stayed 18 Nov, 2019</span>
-            <div class="stars-rating">
-              <img src="img/Stars.svg" alt="stars">
-            </div>
-            <span class="reviews-text" data-aos="zoom-in">It was very nice hotel with cleanliness. Staff behavior was
-              good and polite.
-              They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor
-              and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and
-              support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most
-              of the popular places but self location in a narrow street is not good. Overall it was a good experience
-              and could recommend. </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="activities">
-    <div class="container">
-      <h2 class="activities__title" data-aos="zoom-in">Other Activities</h2>
-      <div class="activities-wrapper">
-        <div class="card" data-aos="fade-up">
-          <img src="img/bar.png" class="card__image">
-          <h3 class="card__title">The curious corner
-            of chamarel</h3>
-          <button class="card__button">Book Now</button>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="img/golf.png" class="card__image">
-          <h3 class="card__title">Gymkhana club golf
-            course</h3>
-          <button class="card__button">Book Now</button>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="img/water.png" class="card__image">
-          <h3 class="card__title">Tamarind falls hiking
-            trip - full day
-          </h3>
-          <button class="card__button">Book Now</button>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="img/island.png" class="card__image">
-          <h3 class="card__title">The blue marine discovery
-            quest</h3>
-          <button class="card__button">Book Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="footer" data-aos="fade-up">
-    <div class="footer__top">
+    </nav>
+    <section class="hotel">
       <div class="container">
-        <div class="footer__top-wrapper">
-          <img src="img/vartical-logo.svg" class="footer-logo">
-          <div class="footer__list">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
-            <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Spa Packages</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Hotel Day Packages</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Restaurants</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Fitness</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Rodrigues</a></li>
-            </ul>
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="stars">
+              <img src="img/Stars.svg" alt="stars" />
+            </div>
+            <div class="hotel-wrapper">
+              <h1 class="hotel-name" data-aos="zoom-in">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-info__offer" data-aos="zoom-in"
+                >Flash Offer</span
+              >
+            </div>
+            <p class="hotel-description" data-aos="zoom-in">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+              Free
+            </p>
           </div>
-
-          <div class="footer__list ">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
-            <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">How does it work?</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Frequently Asked Questions</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Deals.mu loyalty program</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Promote your Business on BTP</a></li>
-            </ul>
-
+          <div class="rating hotel-info__rating">
+            <span class="rating__text" data-aos="zoom-in">User Rattings</span>
+            <span class="rating__counter" data-aos="zoom-in">4.5/5</span>
           </div>
-          <div class="footer__social-network">
-            <div class="fw">
-              <h3 class="footer-sn">Social Network</h3>
-              <ul class="footer__ul footer__ul-sn">
-                <li class="footer__item"><a href="#" class="footer__link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M12.001 2.00195C6.47895 2.00195 2.00195 6.47895 2.00195 12.001C2.00195 16.991 5.65795 21.127 10.439 21.88V14.892H7.89895V12.001H10.439V9.79795C10.439 7.28995 11.932 5.90695 14.215 5.90695C15.309 5.90695 16.455 6.10195 16.455 6.10195V8.56095H15.191C13.951 8.56095 13.563 9.33295 13.563 10.124V11.999H16.334L15.891 14.89H13.563V21.878C18.344 21.129 22 16.992 22 12.001C22 6.47895 17.523 2.00195 12.001 2.00195Z"
-                        fill="#BDBDBD" />
-                    </svg>
-                  </a></li>
-                <li class="footer__item"><a href="#" class="footer__link"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="21" height="21" viewBox="0 0 21 21" fill="none">
-                      <g clip-path="url(#clip0_11_760)">
+        </div>
+        <div class="hotel-grid">
+          <div class="hotel-slider" data-aos="fade-right">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide.jpg"
+                    class="swiper-slide-image"
+                    alt="slide"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide.jpg"
+                    class="swiper-slide-image"
+                    alt="slide"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide.jpg"
+                    class="swiper-slide-image"
+                    alt="slide"
+                  />
+                </div>
+                ...
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button-prev"></button>
+              <button class="slider-button slider-button-next"></button>
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+          </div>
+          <div class="hotel-right" data-aos="fade-left">
+            <div class="booking">
+              <div class="booking__info">
+                <div class="booking__price">
+                  <span class="booking__start">price starts as</span>
+                  <strong class="booking__pricetag">$ 8,500</strong>
+                  <span class="booking__per-room">per room / night</span>
+                </div>
+                <div class="booking__room">
+                  <div class="booking__text">
+                    <img
+                      src="img/user.svg"
+                      alt="Icon: user"
+                      class="booking__icon"
+                    />
+                    <span class="booking__description">2 x Guests</span>
+                  </div>
+                  <div class="booking__text">
+                    <img
+                      src="img/home.svg"
+                      alt="Icon: home"
+                      class="booking__icon"
+                    />
+                    <span class="booking__description">1 x Room</span>
+                  </div>
+                </div>
+              </div>
+              <div class="call-center">
+                <span class="call-center__text">Quick Booking</span>
+                <a class="call-center__number" href="tel:12100">
+                  <img src="img/phone-call.svg" alt="Icon: phone" />
+                  <span class="call-center__num">12100</span>
+                </a>
+              </div>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.458389041313!2d33.407663012636284!3d47.90816737458225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db2177c3aba921%3A0xbf1506b3bf84e813!2sKFC!5e0!3m2!1sru!2sua!4v1689150280476!5m2!1sru!2sua"
+                width="347"
+                height="213"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title" data-aos="zoom-in">
+          subscribe to our
+          <span class="newsletter-title__strong" data-aos="zoom-in"
+            >Newsletter</span
+          >
+        </h2>
+        <form
+          action="thankyou.html"
+          method="post"
+          class="subscribe newsletter__subscribe"
+          data-aos="zoom-in"
+        >
+          <input
+            type="text"
+            class="subscribe__input"
+            placeholder="Your email addres"
+            name="email"
+          />
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title" data-aos="zoom-in">
+          What people think about us
+        </h2>
+        <div class="reviews-container">
+          <div class="reviews-wrapper">
+            <div class="reviews__item">
+              <div class="reviews__profile">
+                <img
+                  src="img/reviews-avatar.jpg"
+                  alt="reviews avatar"
+                  class="reviews__avatar"
+                />
+              </div>
+              <h3 class="reviews__username" data-aos="zoom-in">Megan Fox</h3>
+              <span class="reviews__date" data-aos="zoom-in"
+                >Stayed 18 Nov, 2019</span
+              >
+              <div class="stars-rating">
+                <img src="img/Stars.svg" alt="stars" />
+              </div>
+              <span class="reviews-text" data-aos="zoom-in"
+                >It was very nice hotel with cleanliness. Staff behavior was
+                good and polite. They welcome us very well. Issue was only that
+                Lift was not in working and we were allotted to 3rd floor and
+                amenities articles were in corner of gallery which were giving
+                bad feeling. Breakfast was good and support of the staff was
+                also very nice. Location is not good as per atmosphere, it is
+                very nearby most of the popular places but self location in a
+                narrow street is not good. Overall it was a good experience and
+                could recommend.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="activities">
+      <div class="container">
+        <h2 class="activities__title" data-aos="zoom-in">Other Activities</h2>
+        <div class="activities-wrapper">
+          <div class="card" data-aos="fade-up">
+            <img src="img/bar.png" class="card__image" />
+            <h3 class="card__title">The curious corner of chamarel</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <div class="card" data-aos="fade-up">
+            <img src="img/golf.png" class="card__image" />
+            <h3 class="card__title">Gymkhana club golf course</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <div class="card" data-aos="fade-up">
+            <img src="img/water.png" class="card__image" />
+            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <div class="card" data-aos="fade-up">
+            <img src="img/island.png" class="card__image" />
+            <h3 class="card__title">The blue marine discovery quest</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" data-aos="fade-up">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__top-wrapper">
+            <img src="img/vartical-logo.svg" class="footer-logo" />
+            <div class="footer__list">
+              <h3 class="footer__title">ALL CATEGORIES</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">All Deals</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Hotels</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Activities</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Spa Packages</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Hotel Day Packages</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Restaurants</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Fitness</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Rodrigues</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__list">
+              <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Contact Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">How does it work?</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link"
+                    >Frequently Asked Questions</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link"
+                    >Promote your Business on BTP</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social-network">
+              <div class="fw">
+                <h3 class="footer-sn">Social Network</h3>
+                <ul class="footer__ul footer__ul-sn">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
                         <path
-                          d="M12.1831 10.3247L9.82477 9.22429C9.61897 9.12874 9.44992 9.23584 9.44992 9.46369V11.5364C9.44992 11.7642 9.61897 11.8713 9.82477 11.7758L12.182 10.6754C12.3889 10.5788 12.3889 10.4213 12.1831 10.3247ZM10.4999 0.420044C4.93282 0.420044 0.419922 4.93294 0.419922 10.5C0.419922 16.0671 4.93282 20.58 10.4999 20.58C16.067 20.58 20.5799 16.0671 20.5799 10.5C20.5799 4.93294 16.067 0.420044 10.4999 0.420044ZM10.4999 14.595C5.34022 14.595 5.24992 14.1299 5.24992 10.5C5.24992 6.87019 5.34022 6.40504 10.4999 6.40504C15.6596 6.40504 15.7499 6.87019 15.7499 10.5C15.7499 14.1299 15.6596 14.595 10.4999 14.595Z"
-                          fill="#BDBDBD" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_11_760">
-                          <rect width="21" height="21" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg></a></li>
-                <li class="footer__item"><a href="#" class="footer__link"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <g clip-path="url(#clip0_11_762)">
-                        <path
-                          d="M10 20C8.64583 20 7.35026 19.7363 6.11328 19.209C4.8763 18.6816 3.81185 17.972 2.91992 17.0801C2.02799 16.1882 1.31836 15.1237 0.791016 13.8867C0.263672 12.6497 0 11.3542 0 10C0 8.64583 0.263672 7.35026 0.791016 6.11328C1.31836 4.8763 2.02799 3.81185 2.91992 2.91992C3.81185 2.02799 4.8763 1.31836 6.11328 0.791016C7.35026 0.263672 8.64583 0 10 0C11.3542 0 12.6497 0.263672 13.8867 0.791016C15.1237 1.31836 16.1882 2.02799 17.0801 2.91992C17.972 3.81185 18.6816 4.8763 19.209 6.11328C19.7363 7.35026 20 8.64583 20 10C20 11.3542 19.7363 12.6497 19.209 13.8867C18.6816 15.1237 17.972 16.1882 17.0801 17.0801C16.1882 17.972 15.1237 18.6816 13.8867 19.209C12.6497 19.7363 11.3542 20 10 20ZM15 6.25C15 5.91146 14.8796 5.61849 14.6387 5.37109C14.3978 5.1237 14.1016 5 13.75 5H6.25C5.91146 5 5.61849 5.1237 5.37109 5.37109C5.1237 5.61849 5 5.91146 5 6.25V7.5H7.22656C7.98177 6.66667 8.90625 6.25 10 6.25C11.0938 6.25 12.0182 6.66667 12.7734 7.5H15V6.25ZM7.5 10C7.5 10.6901 7.74414 11.2793 8.23242 11.7676C8.7207 12.2559 9.3099 12.5 10 12.5C10.6901 12.5 11.2793 12.2559 11.7676 11.7676C12.2559 11.2793 12.5 10.6901 12.5 10C12.5 9.3099 12.2559 8.7207 11.7676 8.23242C11.2793 7.74414 10.6901 7.5 10 7.5C9.3099 7.5 8.7207 7.74414 8.23242 8.23242C7.74414 8.7207 7.5 9.3099 7.5 10ZM15 8.75H13.5156C13.6719 9.17969 13.75 9.59635 13.75 10C13.75 11.0417 13.3854 11.9271 12.6562 12.6562C11.9271 13.3854 11.0417 13.75 10 13.75C8.95833 13.75 8.07292 13.3854 7.34375 12.6562C6.61458 11.9271 6.25 11.0417 6.25 10C6.25 9.59635 6.32812 9.17969 6.48438 8.75H5V13.75C5 14.1016 5.12044 14.3978 5.36133 14.6387C5.60221 14.8796 5.89844 15 6.25 15H13.75C14.1016 15 14.3978 14.8796 14.6387 14.6387C14.8796 14.3978 15 14.1016 15 13.75V8.75Z"
-                          fill="#BDBDBD" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_11_762">
-                          <rect width="20" height="20" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg></a></li>
+                          d="M12.001 2.00195C6.47895 2.00195 2.00195 6.47895 2.00195 12.001C2.00195 16.991 5.65795 21.127 10.439 21.88V14.892H7.89895V12.001H10.439V9.79795C10.439 7.28995 11.932 5.90695 14.215 5.90695C15.309 5.90695 16.455 6.10195 16.455 6.10195V8.56095H15.191C13.951 8.56095 13.563 9.33295 13.563 10.124V11.999H16.334L15.891 14.89H13.563V21.878C18.344 21.129 22 16.992 22 12.001C22 6.47895 17.523 2.00195 12.001 2.00195Z"
+                          fill="#BDBDBD"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_11_760)">
+                          <path
+                            d="M12.1831 10.3247L9.82477 9.22429C9.61897 9.12874 9.44992 9.23584 9.44992 9.46369V11.5364C9.44992 11.7642 9.61897 11.8713 9.82477 11.7758L12.182 10.6754C12.3889 10.5788 12.3889 10.4213 12.1831 10.3247ZM10.4999 0.420044C4.93282 0.420044 0.419922 4.93294 0.419922 10.5C0.419922 16.0671 4.93282 20.58 10.4999 20.58C16.067 20.58 20.5799 16.0671 20.5799 10.5C20.5799 4.93294 16.067 0.420044 10.4999 0.420044ZM10.4999 14.595C5.34022 14.595 5.24992 14.1299 5.24992 10.5C5.24992 6.87019 5.34022 6.40504 10.4999 6.40504C15.6596 6.40504 15.7499 6.87019 15.7499 10.5C15.7499 14.1299 15.6596 14.595 10.4999 14.595Z"
+                            fill="#BDBDBD"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_11_760">
+                            <rect width="21" height="21" fill="white" />
+                          </clipPath>
+                        </defs></svg
+                    ></a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_11_762)">
+                          <path
+                            d="M10 20C8.64583 20 7.35026 19.7363 6.11328 19.209C4.8763 18.6816 3.81185 17.972 2.91992 17.0801C2.02799 16.1882 1.31836 15.1237 0.791016 13.8867C0.263672 12.6497 0 11.3542 0 10C0 8.64583 0.263672 7.35026 0.791016 6.11328C1.31836 4.8763 2.02799 3.81185 2.91992 2.91992C3.81185 2.02799 4.8763 1.31836 6.11328 0.791016C7.35026 0.263672 8.64583 0 10 0C11.3542 0 12.6497 0.263672 13.8867 0.791016C15.1237 1.31836 16.1882 2.02799 17.0801 2.91992C17.972 3.81185 18.6816 4.8763 19.209 6.11328C19.7363 7.35026 20 8.64583 20 10C20 11.3542 19.7363 12.6497 19.209 13.8867C18.6816 15.1237 17.972 16.1882 17.0801 17.0801C16.1882 17.972 15.1237 18.6816 13.8867 19.209C12.6497 19.7363 11.3542 20 10 20ZM15 6.25C15 5.91146 14.8796 5.61849 14.6387 5.37109C14.3978 5.1237 14.1016 5 13.75 5H6.25C5.91146 5 5.61849 5.1237 5.37109 5.37109C5.1237 5.61849 5 5.91146 5 6.25V7.5H7.22656C7.98177 6.66667 8.90625 6.25 10 6.25C11.0938 6.25 12.0182 6.66667 12.7734 7.5H15V6.25ZM7.5 10C7.5 10.6901 7.74414 11.2793 8.23242 11.7676C8.7207 12.2559 9.3099 12.5 10 12.5C10.6901 12.5 11.2793 12.2559 11.7676 11.7676C12.2559 11.2793 12.5 10.6901 12.5 10C12.5 9.3099 12.2559 8.7207 11.7676 8.23242C11.2793 7.74414 10.6901 7.5 10 7.5C9.3099 7.5 8.7207 7.74414 8.23242 8.23242C7.74414 8.7207 7.5 9.3099 7.5 10ZM15 8.75H13.5156C13.6719 9.17969 13.75 9.59635 13.75 10C13.75 11.0417 13.3854 11.9271 12.6562 12.6562C11.9271 13.3854 11.0417 13.75 10 13.75C8.95833 13.75 8.07292 13.3854 7.34375 12.6562C6.61458 11.9271 6.25 11.0417 6.25 10C6.25 9.59635 6.32812 9.17969 6.48438 8.75H5V13.75C5 14.1016 5.12044 14.3978 5.36133 14.6387C5.60221 14.8796 5.89844 15 6.25 15H13.75C14.1016 15 14.3978 14.8796 14.6387 14.6387C14.8796 14.3978 15 14.1016 15 13.75V8.75Z"
+                            fill="#BDBDBD"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_11_762">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer__list">
+              <h3 class="footer__title">LEGAL INFORMATION</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms & Conditions</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Disclaimer</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Cancellation policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Privacy</a>
+                </li>
               </ul>
             </div>
           </div>
-
-
-          <div class="footer__list">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
-            <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer__bottom-wrapper">
+            <div class="footer__contact-details">
+              <h3 class="footer__title">Contact Details</h3>
+              <p class="footer__text">
+                Feel free to contact us by phone, email or by our contact form
+              </p>
+              <ul class="footer__ul">
+                <li class="footer__item footer__item-contact">
+                  <a href="" class="footer__link">
+                    <svg
+                      class="footer-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2ZM12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.66304 14.2366 10.2989 13.7678 10.7678C13.2989 11.2366 12.663 11.5 12 11.5Z"
+                        fill="#BDBDBD"
+                      />
+                    </svg>
+                    9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                    States</a
+                  >
+                </li>
+                <li class="footer__item footer__item-contact">
+                  <a href="" class="footer__link"
+                    ><svg
+                      class="footer-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 23 23"
+                      fill="none"
+                    >
+                      <path
+                        d="M19.1666 10.5408H21.0833C21.0833 5.62454 17.3717 1.91675 12.4487 1.91675V3.83341C16.3415 3.83341 19.1666 6.65379 19.1666 10.5408Z"
+                        fill="#BDBDBD"
+                      />
+                      <path
+                        d="M12.4584 7.66657C14.4737 7.66657 15.3334 8.5262 15.3334 10.5416H17.25C17.25 7.45095 15.549 5.7499 12.4584 5.7499V7.66657ZM15.7378 12.8828C15.5536 12.7154 15.3116 12.6261 15.0629 12.6338C14.8142 12.6415 14.5782 12.7456 14.4047 12.924L12.1114 15.2824C11.5594 15.177 10.4497 14.8311 9.30736 13.6916C8.16503 12.5483 7.81907 11.4357 7.71653 10.8875L10.0731 8.59328C10.2517 8.41994 10.3559 8.1839 10.3636 7.9351C10.3713 7.68631 10.2819 7.44428 10.1143 7.26024L6.57323 3.36653C6.40557 3.18191 6.17254 3.06993 5.92363 3.05436C5.67473 3.03879 5.42956 3.12087 5.24019 3.28315L3.16061 5.06661C2.99492 5.2329 2.89603 5.45421 2.88269 5.68857C2.86832 5.92815 2.59423 11.6034 6.9949 16.006C10.834 19.8441 15.6429 20.1249 16.9673 20.1249C17.1609 20.1249 17.2797 20.1192 17.3114 20.1172C17.5457 20.1041 17.7669 20.0048 17.9324 19.8384L19.7149 17.7578C19.8773 17.5686 19.9595 17.3235 19.9441 17.0746C19.9287 16.8257 19.8169 16.5926 19.6324 16.4248L15.7378 12.8828Z"
+                        fill="#BDBDBD"
+                      />
+                    </svg>
+                    Tel (business hours) : 269 1500 <br />
+                    Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm) <br />
+                    Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  </a>
+                </li>
+                <li class="footer__item footer__item-contact">
+                  <a href="" class="footer__link">
+                    <svg
+                      class="footer-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.6666 3.33325H3.33329C2.41663 3.33325 1.67496 4.08325 1.67496 4.99992L1.66663 14.9999C1.66663 15.9166 2.41663 16.6666 3.33329 16.6666H16.6666C17.5833 16.6666 18.3333 15.9166 18.3333 14.9999V4.99992C18.3333 4.08325 17.5833 3.33325 16.6666 3.33325ZM16.3333 6.87492L10.4416 10.5583C10.175 10.7249 9.82496 10.7249 9.55829 10.5583L3.66663 6.87492C3.58307 6.82801 3.50989 6.76464 3.45153 6.68863C3.39317 6.61262 3.35084 6.52557 3.32711 6.43273C3.30337 6.33989 3.29871 6.2432 3.31342 6.14851C3.32813 6.05382 3.36191 5.9631 3.41269 5.88184C3.46348 5.80058 3.53023 5.73046 3.6089 5.67575C3.68757 5.62103 3.77652 5.58284 3.87037 5.5635C3.96423 5.54416 4.06103 5.54406 4.15492 5.56321C4.24881 5.58236 4.33785 5.62036 4.41663 5.67492L9.99996 9.16658L15.5833 5.67492C15.6621 5.62036 15.7511 5.58236 15.845 5.56321C15.9389 5.54406 16.0357 5.54416 16.1295 5.5635C16.2234 5.58284 16.3124 5.62103 16.391 5.67575C16.4697 5.73046 16.5364 5.80058 16.5872 5.88184C16.638 5.9631 16.6718 6.05382 16.6865 6.14851C16.7012 6.2432 16.6966 6.33989 16.6728 6.43273C16.6491 6.52557 16.6067 6.61262 16.5484 6.68863C16.49 6.76464 16.4169 6.82801 16.3333 6.87492Z"
+                        fill="#BDBDBD"
+                      />
+                    </svg>
+                    cherly.lawson@example.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__form">
+              <h3 class="footer__title">Send us message</h3>
+              <form action="send.php" method="post" class="modal__form">
+                <div class="footer__form-person">
+                  <input
+                    type="text"
+                    class="input modal__input"
+                    placeholder="Your full name"
+                    name="name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="input modal__input"
+                    placeholder="Phone number"
+                    required
+                  />
+                </div>
+                <textarea
+                  class="message modal__message"
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+                <div class="footer__send-wrapper">
+                  <button class="footer__button">Send</button>
+                  <span class="footer__form-require">* Required Fields</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__info">
+        <div class="container">
+          <div class="footer__info-wrapper">
+            <ul class="footer__info-list">
+              <li class="footer__info-item">
+                <a href="#" class="footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__info-item">
+                <a href="#" class="footer__link">Conditions of use</a>
+              </li>
+              <li class="footer__info-item">
+                <a href="#" class="footer__link">Cancellation policy</a>
+              </li>
             </ul>
+            <img src="img/pay.svg" alt="" class="footer__info-pay" />
           </div>
-
         </div>
-
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer__bottom-wrapper">
-          <div class="footer__contact-details">
-            <h3 class="footer__title">Contact Details</h3>
-            <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-            <ul class="footer__ul">
-              <li class="footer__item footer__item-contact">
-                <a href="" class="footer__link">
-                  <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none">
-                    <path
-                      d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2ZM12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.66304 14.2366 10.2989 13.7678 10.7678C13.2989 11.2366 12.663 11.5 12 11.5Z"
-                      fill="#BDBDBD" />
-                  </svg>
-                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</a>
-              </li>
-              <li class="footer__item footer__item-contact">
-                <a href="" class="footer__link"><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" width="23"
-                    height="23" viewBox="0 0 23 23" fill="none">
-                    <path
-                      d="M19.1666 10.5408H21.0833C21.0833 5.62454 17.3717 1.91675 12.4487 1.91675V3.83341C16.3415 3.83341 19.1666 6.65379 19.1666 10.5408Z"
-                      fill="#BDBDBD" />
-                    <path
-                      d="M12.4584 7.66657C14.4737 7.66657 15.3334 8.5262 15.3334 10.5416H17.25C17.25 7.45095 15.549 5.7499 12.4584 5.7499V7.66657ZM15.7378 12.8828C15.5536 12.7154 15.3116 12.6261 15.0629 12.6338C14.8142 12.6415 14.5782 12.7456 14.4047 12.924L12.1114 15.2824C11.5594 15.177 10.4497 14.8311 9.30736 13.6916C8.16503 12.5483 7.81907 11.4357 7.71653 10.8875L10.0731 8.59328C10.2517 8.41994 10.3559 8.1839 10.3636 7.9351C10.3713 7.68631 10.2819 7.44428 10.1143 7.26024L6.57323 3.36653C6.40557 3.18191 6.17254 3.06993 5.92363 3.05436C5.67473 3.03879 5.42956 3.12087 5.24019 3.28315L3.16061 5.06661C2.99492 5.2329 2.89603 5.45421 2.88269 5.68857C2.86832 5.92815 2.59423 11.6034 6.9949 16.006C10.834 19.8441 15.6429 20.1249 16.9673 20.1249C17.1609 20.1249 17.2797 20.1192 17.3114 20.1172C17.5457 20.1041 17.7669 20.0048 17.9324 19.8384L19.7149 17.7578C19.8773 17.5686 19.9595 17.3235 19.9441 17.0746C19.9287 16.8257 19.8169 16.5926 19.6324 16.4248L15.7378 12.8828Z"
-                      fill="#BDBDBD" />
-                  </svg>
-                  Tel (business hours) : 269 1500 <br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                  pm)
-                  <br> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) </a>
-              </li>
-              <li class="footer__item footer__item-contact">
-                <a href="" class="footer__link"> <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" width="20"
-                    height="20" viewBox="0 0 20 20" fill="none">
-                    <path
-                      d="M16.6666 3.33325H3.33329C2.41663 3.33325 1.67496 4.08325 1.67496 4.99992L1.66663 14.9999C1.66663 15.9166 2.41663 16.6666 3.33329 16.6666H16.6666C17.5833 16.6666 18.3333 15.9166 18.3333 14.9999V4.99992C18.3333 4.08325 17.5833 3.33325 16.6666 3.33325ZM16.3333 6.87492L10.4416 10.5583C10.175 10.7249 9.82496 10.7249 9.55829 10.5583L3.66663 6.87492C3.58307 6.82801 3.50989 6.76464 3.45153 6.68863C3.39317 6.61262 3.35084 6.52557 3.32711 6.43273C3.30337 6.33989 3.29871 6.2432 3.31342 6.14851C3.32813 6.05382 3.36191 5.9631 3.41269 5.88184C3.46348 5.80058 3.53023 5.73046 3.6089 5.67575C3.68757 5.62103 3.77652 5.58284 3.87037 5.5635C3.96423 5.54416 4.06103 5.54406 4.15492 5.56321C4.24881 5.58236 4.33785 5.62036 4.41663 5.67492L9.99996 9.16658L15.5833 5.67492C15.6621 5.62036 15.7511 5.58236 15.845 5.56321C15.9389 5.54406 16.0357 5.54416 16.1295 5.5635C16.2234 5.58284 16.3124 5.62103 16.391 5.67575C16.4697 5.73046 16.5364 5.80058 16.5872 5.88184C16.638 5.9631 16.6718 6.05382 16.6865 6.14851C16.7012 6.2432 16.6966 6.33989 16.6728 6.43273C16.6491 6.52557 16.6067 6.61262 16.5484 6.68863C16.49 6.76464 16.4169 6.82801 16.3333 6.87492Z"
-                      fill="#BDBDBD" />
-                  </svg>cherly.lawson@example.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__form">
-            <h3 class="footer__title">Send us message</h3>
-            <form action="send.php" method="post" class="modal__form">
-              <div class="footer__form-person">
-                <input type="text" class="input modal__input" placeholder="Your full name" name="name" required>
-                <input type="text" class="input modal__input" placeholder="Phone number" required>
-              </div>
-              <textarea class="message modal__message" placeholder="Message" name="message" required></textarea>
-              <div class="footer__send-wrapper">
-                <button class="footer__button">Send</button>
-                <span class="footer__form-require">* Required Fields</span>
-              </div>
-            </form>
-          </div>
-
+    </section>
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="#" />
+          </a>
+          <h3 class="modal__title">Send us message</h3>
+          <form
+            action="https://iamgater.github.io/php1/"
+            method="post"
+            class="modal__form"
+          >
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your full name"
+              name="name"
+              required
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Phone number"
+              required
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+            <button class="modal__button">Send</button>
+          </form>
         </div>
       </div>
     </div>
-    <div class="footer__info">
-      <div class="container">
-        <div class="footer__info-wrapper">
-          <ul class="footer__info-list">
-            <li class="footer__info-item"><a href="#" class="footer__link">Disclaimer</a></li>
-            <li class="footer__info-item"><a href="#" class="footer__link">Conditions of use</a></li>
-            <li class="footer__info-item"><a href="#" class="footer__link">Cancellation policy</a></li>
-          </ul>
-          <img src="img/pay.svg" alt="" class="footer__info-pay">
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="modal">
-    <div class="modal__overlay">
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="#">
-        </a>
-        <h3 class="modal__title">Send us message</h3>
-        <form action="send.php" method="post" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your full name" name="name" required>
-          <input type="text" class="input modal__input" placeholder="Phone number" required>
-          <textarea class="message modal__message" placeholder="Message" name="message" required></textarea>
-          <button class="modal__button">Send</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <script src="js/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <script src="js/aos.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
